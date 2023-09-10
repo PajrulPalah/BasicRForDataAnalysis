@@ -47,7 +47,8 @@ One common function you can use to preview the data is the `head()` function, wh
 head(diamonds)
 ```
 The result will show
-![image](https://github.com/PajrulPalah/My-First-Project-Data-Analysis/assets/143974279/ac038f63-72e1-4203-ad4e-5aa17ed31f5c)
+![WhatsApp Image 2023-09-10 at 20 03 31](https://github.com/PajrulPalah/Basic_R_For_Data-Analysis/assets/143974279/660c1e5f-fd29-4aab-b7ad-4e446eaa3f7f)
+
 
 
 In addition to `head()` there are a number of other useful functions you can use to summarize or preview the data. For example, the `str()` and `glimpse()` functions will both return summaries of each column in your data arranged horizontally. You can try out these two functions by running the code chunks below:
@@ -56,15 +57,17 @@ In addition to `head()` there are a number of other useful functions you can use
 str(diamonds)
 ```
 The result
+![WhatsApp Image 2023-09-10 at 20 03 48](https://github.com/PajrulPalah/Basic_R_For_Data-Analysis/assets/143974279/2ba5af9b-2222-4b0c-bc17-09d40e7fbdab)
 
-![image](https://github.com/PajrulPalah/My-First-Project-Data-Analysis/assets/143974279/7367aac9-a8ff-4be5-b137-6260af93f851)
+
 
 ```{r}
 glimpse(diamonds)
 ```
 The result
 
-![image](https://github.com/PajrulPalah/My-First-Project-Data-Analysis/assets/143974279/eb2260f2-7fa2-44a1-af80-9ee40d54bff8)
+![WhatsApp Image 2023-09-10 at 20 04 11](https://github.com/PajrulPalah/Basic_R_For_Data-Analysis/assets/143974279/96598f99-d3c8-4a4d-926b-75559376144a)
+
 
 
 Another simple function that you may use regularly is the `colnames()` function. It returns a list of column names from your dataset. You can check out this function by running the code chunk below:
@@ -74,7 +77,8 @@ colnames(diamonds)
 ```
 The result
 
-![image](https://github.com/PajrulPalah/My-First-Project-Data-Analysis/assets/143974279/ec3921b2-2097-4e08-9719-42baafda32f5)
+![WhatsApp Image 2023-09-10 at 20 04 41](https://github.com/PajrulPalah/Basic_R_For_Data-Analysis/assets/143974279/4a18e328-c1e8-4263-8292-777c37fa62a5)
+
 
 After running the code chunk, you may have noticed a number in brackets. This number helps you count the number of columns in your dataset. If you have data with lots of columns and `colnames()` prints the results on multiple lines, each line will have a number in brackets at the start of the line indicating what number column that is! So, for example, "carat" is the first column in the `diamonds` dataset. On the second line, there is the number seven in brackets; "price" is the seventh column. 
 
@@ -89,7 +93,8 @@ rename(diamonds, carat_new = carat)
 ```
 The result
 
-![image](https://github.com/PajrulPalah/My-First-Project-Data-Analysis/assets/143974279/475dcdee-d523-4da3-a505-0f8ff7faa7e3)
+![WhatsApp Image 2023-09-10 at 20 04 58](https://github.com/PajrulPalah/Basic_R_For_Data-Analysis/assets/143974279/b1326b98-ba49-4bad-b316-1d16e36b0259)
+
 
 Here, the function is being used to change the name of `carat` to `carat_new`. This is a pretty basic change, but `rename()` has many options that can help you do more complex changes across all of the variables in your data.
 
@@ -100,7 +105,8 @@ rename(diamonds, carat_new = carat, cut_new = cut)
 ```
 The result
 
-![image](https://github.com/PajrulPalah/My-First-Project-Data-Analysis/assets/143974279/db51b22f-056d-4ae1-8102-4a49f453e289)
+![WhatsApp Image 2023-09-10 at 20 05 15](https://github.com/PajrulPalah/Basic_R_For_Data-Analysis/assets/143974279/f5f375e0-cf0a-4d18-8dc0-547ab7c6dd60)
+
 
 
 Another handy function for summarizing your data is `summarize().` You can use it to generate a wide range of summary statistics for your data. For example, if you wanted to know what the mean for `carat` was in this dataset, you could run the code in the chunk below:
@@ -110,7 +116,8 @@ summarize(diamonds, mean_carat = mean(carat))
 ```
 The result
 
-![image](https://github.com/PajrulPalah/My-First-Project-Data-Analysis/assets/143974279/0c920d40-bc8d-4235-b7f9-233dabbf398f)
+![WhatsApp Image 2023-09-10 at 20 05 30](https://github.com/PajrulPalah/Basic_R_For_Data-Analysis/assets/143974279/6e712fd7-907a-4e23-9040-2b5d92c57d49)
+
 
 These functions are a great way to get more familiar with your data and start making observations about it. But sometimes, previewing tables isn't enough to understand a dataset. Luckily, `R` has visualization tools built in. 
 
@@ -125,7 +132,8 @@ ggplot(data = diamonds, aes(x = carat, y = price)) +
 ```
 The result
 
-![image](https://github.com/PajrulPalah/My-First-Project-Data-Analysis/assets/143974279/fd0374e8-8ed8-4bcb-aa7e-fcbdae3bf8e3)
+![WhatsApp Image 2023-09-10 at 20 05 51](https://github.com/PajrulPalah/Basic_R_For_Data-Analysis/assets/143974279/90fd318d-a0c1-4ba0-a285-e433ac4360d1)
+
 
 The code above takes the `diamonds` data, plots the carat column on the X-axis, the price column on the Y-axis, and represents the data as a scatter plot using the `geom_point()` command. 
 
@@ -137,7 +145,8 @@ ggplot(data = diamonds, aes(x = carat, y = price, color = cut)) +
 ```
 The result
 
-![image](https://github.com/PajrulPalah/My-First-Project-Data-Analysis/assets/143974279/fbe3dc80-adcb-4ae1-ac27-69e063bc353d)
+![WhatsApp Image 2023-09-10 at 20 06 18](https://github.com/PajrulPalah/Basic_R_For_Data-Analysis/assets/143974279/b5372d1f-5111-44e9-a5c5-ff1c9724b75a)
+
 
 
 Wow, that's a busy visual! Sometimes when you are trying to represent many different aspects of your data in a visual, it can help to separate out some of the components. For example, you could create a different plot for each type of cut. `ggplot2` makes it easy to do this with the `facet_wrap()` function:
@@ -149,7 +158,8 @@ ggplot(data = diamonds, aes(x = carat, y = price, color = cut)) +
 ```
 The result
 
-![image](https://github.com/PajrulPalah/My-First-Project-Data-Analysis/assets/143974279/70791c39-c51d-4cff-9c36-699783dd89ac)
+![WhatsApp Image 2023-09-10 at 20 06 58](https://github.com/PajrulPalah/Basic_R_For_Data-Analysis/assets/143974279/8aef2bd1-c885-45bb-9c97-38dc9bac64fe)
+
 
 
 You will learn many other ways of working with `ggplot2` to make functional and beautiful visuals later on. For now, hopefully you understand that it is both flexible and powerful!
