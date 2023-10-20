@@ -1,12 +1,13 @@
 # R for Data Analysis
 
-This repository contains resources for learning R for data analysis. It includes the following files:
+This is a repository for a data analysis project using the R programming language. This repository contains various information, documents, and code necessary for data analysis using R.
 
-1. [Basic_R_For_Analysis.md](Basic_R_For_Analysis.md) - An introduction to basic R concepts for data analysis.
+## Table of Contents
 
-2. [Changing_data.md](Changing_data.md) - Explains how to manipulate and transform data in R.
+1. [Introduction to R](Basic_R_For_Analysis.md) - This document provides an introduction to R for data analysis.
+2. [Data Transformation](Changing_data.md) - A guide on how to perform data transformation in R.
+3. [Data Analysis with Pivot Tables](DataAnalysisWithPivotTable.md) - A guide on how to perform data analysis using pivot tables in R.
+4. [Introduction to Statistics with R](Intro_Stats_WithR.md) - Introductory material on statistics using R.
+5. [Creating Data Frames](make_data_frame.md) - A step-by-step guide on how to create and work with data frames in R.
 
-3. [Intro_Stats_WithR.md](Intro_Stats_WithR.md) - An introductory guide to performing statistical analysis with R.
-
-Feel free to explore the content in each of these files to learn more about R and data analysis.
-
+## Thank you for visiting this repository! I hope it proves useful for your data analysis using R.
